@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(82, 185, 185);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky, -webkit-sticky;
+    align-items: center;
+    background-color: bisque;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: black;
+    padding: 0 10px 0 10px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul {
+    padding: 0 10px 0 10px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 0 10px 0 10px;
+    font-weight: lighter;
+    font-size: 24px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+/*Screen size optimization here*/
+@media screen and (max-width: 425px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: sticky, -webkit-sticky;
+        align-items: center;
+        background-color: bisque;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    header nav ul li a {
+        font-weight: normal;
+        font-size: medium;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+}
