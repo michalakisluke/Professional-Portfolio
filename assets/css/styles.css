@@ -3,10 +3,8 @@
     padding: 0;
 }
 
-/*Adjust margins after adding above statement. Do after adding real content and images*/
-
 body {
-    background-color: rgb(82, 185, 185);
+    background-color: rgb(180, 207, 207);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -16,16 +14,12 @@ header {
     flex-wrap: wrap;
     position: sticky;
     align-items: center;
-    background-color: bisque;
+    background-color: rgb(180, 207, 207);
     position: absolute;
     width: 100%;
     top: 0;
     left: 0;
-}
-
-.row {
-    display: flex;
-    justify-content: center;
+    padding: 15px 0 15px 0;
 }
 
 header h1 {
@@ -33,6 +27,10 @@ header h1 {
     font-size: 36px;
     color: black;
     padding: 0 10px 0 10px;
+}
+
+header h1:hover {
+    text-shadow: 2px 2px 3px red;
 }
 
 header a, #contact a {
@@ -58,136 +56,41 @@ header nav ul li a {
     font-size: 24px;
 }
 
-#contact, #about-me {
+header nav ul li a:hover {
+    text-shadow: 2px 2px 3px red;
+}
+
+.content {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 
-#projects {
-    display: column;
-    justify-content: space-between;
-    width: 100%;
+#project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.project-content {
-    margin: 50px auto;
-    padding-bottom: 50px;
+#project-content h2 {
+    font-weight: bolder;
+    font-size: 34px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    width: 95%;
+    border-bottom: thick double black;
+
+}
+
+.main {
+    padding-top: 10px;
     width: 80%;
-    display: flex;
-    flex-wrap: wrap;
+}
+
+.main img {
+    width: 80%;
+    height: auto; 
     align-items: center;
-    justify-content: space-between;
-}
-
-.project-image {
-    flex: 1 50%;
-}
-
-.project-description {
-    flex: 2 50%;
-    display: flex;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-}
-
-.project-description p {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.project-content img {
-    max-width: 30vw;
-    height: auto;
-}
-
-.body {             /*Remove this and consolidate with #content, shouldn't be on it's own. */
-    top: 0;
-    left: 0;
-    margin-top: 0px;
-    padding-top: 90px;
-}
-
-#contact ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    text-decoration: none;
-}
-
-#contact ul li a {
-    padding: 0 15px 0 15px;
-    font-weight: normal;
-    font-size: 24px;
-    text-decoration: none;
-}
-
-/*Screen size optimization here*/
-/* Make projects stack at these sizes, no more verticle layout */
-@media screen and (max-width: 768px) {
-    header {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        background-color: bisque;
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-    }
-    
-    header nav ul li a {
-        font-weight: normal;
-        font-size: medium;
-    }
-
-    header nav ul {
-        padding: 0;
-    }
-    
-    .body {
-        top: 0;
-        left: 0;
-        margin-top: 0px;
-        padding-top: 150px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    header {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        background-color: bisque;
-        position: absolute;
-        width: 100%;
-        top:  0;
-        left: 0;
-    }
-    
-    header nav ul li a {
-        font-weight: normal;
-        font-size: medium;
-    }
-
-    header nav ul {
-        padding: 0;
-    }
-    .body {
-        top: 0;
-        left: 0;
-        margin-top: 0px;
-        padding-top: 150px;
-    }
+    margin-left: auto;
+    margin-right: auto;
 }
