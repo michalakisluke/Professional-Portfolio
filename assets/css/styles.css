@@ -8,13 +8,15 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* Style header */
+
 header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
     align-items: center;
-    background-color: rgb(180, 207, 207);
+    background-color: rgb(180, 207, 207);;
     position: absolute;
     width: 100%;
     top: 0;
@@ -30,7 +32,7 @@ header h1 {
 }
 
 header h1:hover {
-    text-shadow: 2px 2px 3px red;
+    text-shadow: 2px 2px 3px grey;
 }
 
 header a, #contact a {
@@ -57,8 +59,38 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    text-shadow: 2px 2px 3px red;
+    text-shadow: 2px 2px 3px grey;
 }
+
+/*Style About Me*/
+
+.about-me {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me h2 {
+    font-weight: bolder;
+    font-size: 34px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    width: 95%;
+    border-bottom: thick double black;
+}
+
+
+.about-me img {
+    width: auto;
+    height: 551px; 
+    display: block;
+    margin: 10px 0 10px 0;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+/*Style content*/
 
 .content {
     display: flex;
@@ -85,12 +117,22 @@ header nav ul li a:hover {
 .main {
     margin-top: 10px;
     width: 80%;
+    position: relative;
 }
+
+/* Play with these values to make nice on your weird desktop */
 
 .main-proj-description {
     background-color: rgba(2, 2, 2, 0.75 );
+    color: white;
     width: fit-content;
+    justify-content: center;
+    position: absolute;
+    top: 413px;
+    left: 5px;
 }
+
+/* Need to us media query set text at each screen size */
 
 .sub {
     padding-top: 10px;
@@ -99,9 +141,9 @@ header nav ul li a:hover {
     justify-content: space-evenly;
 }
 
-.main img, .sub img {
-    width: 100%;
-    height: auto; 
+.main img {
+    width: 1162px;
+    height: 551px; 
     display: block;
     margin: auto;
     border: 5px solid black;
@@ -109,4 +151,37 @@ header nav ul li a:hover {
 }
 
 
+/* Style Reach Out */
 
+.contact {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h2 {
+    font-weight: bolder;
+    font-size: 34px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    width: 95%;
+    border-bottom: thick double black;
+}
+
+.contact p {
+    font-weight: bolder;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact a:hover {
+    text-shadow: 2px 2px 3px grey;
+}
