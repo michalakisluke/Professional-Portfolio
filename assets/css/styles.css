@@ -8,10 +8,15 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-a {
+#project-content a {
     display: block;
-    width: fit-content;
-    height: fit-content;
+    margin-top: 10px;
+    max-width: 1162px;
+    width: 80%;
+    height: 551px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Style header */
@@ -123,7 +128,7 @@ header nav ul li a:hover {
 .main {
     margin-top: 10px;
     max-width: 1162px;
-    width: 80%;
+    width: 100%;
     height: 551px;
     display: block;
     margin-left: auto;
