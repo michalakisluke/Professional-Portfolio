@@ -8,6 +8,12 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+a {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+}
+
 /* Style header */
 
 header {
@@ -116,11 +122,17 @@ header nav ul li a:hover {
 
 .main {
     margin-top: 10px;
+    max-width: 1162px;
     width: 80%;
+    height: 551px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+    border-radius: 20px;
     position: relative;
+    background-image: url('../images/horiseon-screen.png');
 }
-
-/* Play with these values to make nice on your weird desktop */
 
 .main-proj-description {
     background-color: rgba(2, 2, 2, 0.75 );
@@ -129,7 +141,6 @@ header nav ul li a:hover {
     justify-content: center;
     position: absolute;
     top: 413px;
-    left: 5px;
 }
 
 /* Need to us media query set text at each screen size */
@@ -141,14 +152,15 @@ header nav ul li a:hover {
     justify-content: space-evenly;
 }
 
-.main img {
-    width: 1162px;
+/*.main img {
+    max-width: 1162px;
+    width: 80%;
     height: 551px; 
     display: block;
     margin: auto;
     border: 5px solid black;
     border-radius: 20px;
-}
+} */
 
 
 /* Style Reach Out */
