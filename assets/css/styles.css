@@ -192,21 +192,43 @@ header nav ul li a:hover {
     margin-top: 10px;
     max-width: 1162px;
     width: 80%;
-    height: 551px;
+    height: 291px;
     display: block;
     margin-left: auto;
     margin-right: auto;   
 }
 
-/*.main img {
+.sub-proj-2 {
+    background-image: url('../images/robot-gladiator.jpg');
+    background-position: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 576px;
+    height: 281px;
+    padding-left: 5px;
+    position: relative;
+}
+
+.sub-proj-2 .sub-proj-description {
+    background-color: rgba(2, 2, 2, 0.75 );
+    color: white;
+    width: fit-content;
+    justify-content: center;
+    position: absolute;
+    left: 0px;
+    top: 211px;
+}
+
+.sub-proj-2-link a {
+    display: block;
+    margin-top: 10px;
     max-width: 1162px;
     width: 80%;
-    height: 551px; 
+    height: 291px;
     display: block;
-    margin: auto;
-    border: 5px solid black;
-    border-radius: 20px;
-} */
+    margin-left: auto;
+    margin-right: auto;   
+}
 
 
 /* Style Reach Out */
