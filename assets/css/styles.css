@@ -8,11 +8,11 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#project-content a {
+.main-proj-link a {
     display: block;
     margin-top: 10px;
     max-width: 1162px;
-    width: 80%;
+    width: 100%;
     height: 551px;
     display: block;
     margin-left: auto;
@@ -139,6 +139,13 @@ header nav ul li a:hover {
     background-image: url('../images/horiseon-screen.png');
 }
 
+.main-proj-link {
+    margin-top: 10px;
+    max-width: 1162px;
+    width: 100%;
+    height: 551px;
+}
+
 .main-proj-description {
     background-color: rgba(2, 2, 2, 0.75 );
     color: white;
@@ -151,10 +158,44 @@ header nav ul li a:hover {
 /* Need to us media query set text at each screen size */
 
 .sub {
-    padding-top: 10px;
-    width: 80%;
+    padding-top: 40px;
+    max-width: 1162px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-proj-1 {
+    background-image: url('../images/run-buddy-header-hero.PNG');
+    background-position: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 576px;
+    height: 281px;
+    left: -60px;
+    padding-left: 5px;
+    position: relative;
+}
+
+.sub-proj-1 .sub-proj-description {
+    background-color: rgba(2, 2, 2, 0.75 );
+    color: white;
+    width: fit-content;
+    justify-content: center;
+    position: absolute;
+    left: 0px;
+    top: 211px;
+}
+
+.sub-proj-1-link a {
+    display: block;
+    margin-top: 10px;
+    max-width: 1162px;
+    width: 80%;
+    height: 551px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
 }
 
 /*.main img {
