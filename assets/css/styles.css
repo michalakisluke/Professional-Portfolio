@@ -339,7 +339,7 @@ header nav ul li a:hover {
 }
 
 /*Media query for small screens*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1163px) {
 
     .main {
         margin-top: 10px;
