@@ -10,5 +10,5 @@ The first version of a professional portfolio for me, Luke Michalakis.
 https://michalakisluke.github.io/Professional-Portfolio/
 
 ## Screenshot
-![alt text](https://github.com/michalakisluke/Professional-Portfolio/blob/main/screenshot.jpg?raw=true)
+![alt text](https://github.com/michalakisluke/Professional-Portfolio/main/screenshot.jpg?raw=true)
 
