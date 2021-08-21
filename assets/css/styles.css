@@ -138,7 +138,7 @@ header nav ul li a:hover {
     border: 5px solid black;
     border-radius: 20px;
     position: relative;
-    background-image: url('../images/horiseon-screen.PNG');
+    background-image: url('../images/run-buddy-header-hero.PNG');
 }
 
 .main-proj-link {
@@ -445,7 +445,7 @@ header nav ul li a:hover {
         border: 5px solid black;
         border-radius: 10px;
         position: relative;
-        background-image: url('../images/run-buddy-header-hero.PNG');
+        background-image: url('../images/horiseon-screen.PNG');
         left: -5px;
     }
     
