@@ -8,7 +8,7 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.main-proj-link a {
+/*.main-proj-link a {
     display: block;
     margin-top: 10px;
     max-width: 1162px;
@@ -17,7 +17,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 /* Style header */
 
@@ -101,7 +101,7 @@ header nav ul li a:hover {
     border-radius: 20px;
 }
 
-/*Style content*/
+/*Style project container*/
 
 .content {
     display: flex;
@@ -125,6 +125,8 @@ header nav ul li a:hover {
 
 }
 
+/*Style main project*/
+
 .main {
     margin-top: 10px;
     max-width: 1162px;
@@ -146,6 +148,17 @@ header nav ul li a:hover {
     height: 551px;
 }
 
+.main-proj-link a {
+    display: block;
+    margin-top: 10px;
+    max-width: 1162px;
+    width: 100%;
+    height: 551px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .main-proj-description {
     background-color: rgba(2, 2, 2, 0.75 );
     color: white;
@@ -155,7 +168,7 @@ header nav ul li a:hover {
     top: 413px;
 }
 
-/* Need to us media query set text at each screen size */
+/*Style sub project section*/
 
 .sub {
     padding-top: 20px;
@@ -323,4 +336,264 @@ header nav ul li a:hover {
 
 .contact a:hover {
     text-shadow: 2px 2px 3px grey;
+}
+
+/*Media query for small screens*/
+@media screen and (max-width: 1024px) {
+
+    .main {
+        margin-top: 10px;
+        width: 574px;
+        height: 291px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px solid black;
+        border-radius: 10px;
+        position: relative;
+        background-image: url('../images/horiseon-screen.png');
+        left: -2px;
+    }
+    
+    .main-proj-link {
+        margin-top: 10px;
+        width: 574px;
+        height: 291px;
+        left: -2px;
+    }
+    
+    .main-proj-link a {
+        display: block;
+        margin-top: 10px;
+        width: 574px;
+        height: 291px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        left: -2px;
+    }
+    
+    .main-proj-description {
+        background-color: rgba(2, 2, 2, 0.75 );
+        color: white;
+        width: fit-content;
+        justify-content: center;
+        position: absolute;
+        top: 200px;
+        left: -2px;
+    }    
+    
+    .sub {
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*Media query for tablet screens*/
+@media screen and (max-width: 768px) {
+    
+    .about-me h2, #project-content h2, .contact h2 {
+        font-size: 25px;
+    }
+
+    .about-me img {
+        width: auto;
+        height: 291px; 
+        display: block;
+        margin: 10px 0 10px 0;
+        border: 5px solid black;
+        border-radius: 20px;
+    }
+    
+    .about-me p {
+        font-size: small;
+    }    
+}
+
+/*Media query for phones and smaller*/
+@media screen and (max-width: 575px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: sticky;
+        align-items: center;
+        background-color: rgb(180, 207, 207);;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 15px 0 15px 0;
+    }
+
+    .main {
+        margin-top: 10px;
+        width: 410px;
+        height: 291px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px solid black;
+        border-radius: 10px;
+        position: relative;
+        background-image: url('../images/horiseon-screen.png');
+        left: -2px;
+    }
+    
+    .main-proj-link {
+        margin-top: 10px;
+        width: 410px;
+        height: 291px;
+        left: -2px;
+    }
+    
+    .main-proj-link a {
+        display: block;
+        margin-top: 10px;
+        width: 410px;
+        height: 291px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        left: -2px;
+    }
+    
+    .main-proj-description {
+        background-color: rgba(2, 2, 2, 0.75 );
+        color: white;
+        width: fit-content;
+        justify-content: center;
+        position: absolute;
+        top: 200px;
+        left: -2px;
+    }    
+    
+    .sub {
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sub-proj-1 {
+        background-image: url('../images/run-buddy-header-hero.PNG');
+        background-position: center;
+        border: 5px solid black;
+        border-radius: 10px;
+        width: 410px;
+        height: 281px;
+        left: 0px;
+        position: relative;
+    }
+    
+    .sub-proj-1 .sub-proj-description {
+        background-color: rgba(2, 2, 2, 0.75 );
+        color: white;
+        width: fit-content;
+        justify-content: center;
+        position: absolute;
+        top: 211px;
+    }
+    
+    .sub-proj-1-link a {
+        display: block;
+        margin-top: 10px;
+        width: 410px;
+        height: 291px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+    
+    .sub-proj-2 {
+        background-image: url(../images/robot-gladiator.jpg);
+        background-position: center;
+        border: 5px solid black;
+        border-radius: 10px;
+        width: 410px;
+        height: 281px;
+        position: relative;
+    }
+    
+    .sub-proj-2 .sub-proj-description {
+        background-color: rgba(2, 2, 2, 0.75 );
+        color: white;
+        width: fit-content;
+        justify-content: center;
+        position: absolute;
+        top: 211px;
+    }
+    
+    .sub-proj-2-link a {
+        margin-top: 10px;
+        width: 410px;
+        height: 291px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .sub-proj-3 {
+        background-image: url('../images/rock-paper-scissors.jpg');
+        background-position: center;
+        border: 5px solid black;
+        border-radius: 10px;
+        width: 410px;
+        height: 281px;
+        left: 0px;
+        position: relative;
+    }
+    
+    .sub-proj-3 .sub-proj-description {
+        background-color: rgba(2, 2, 2, 0.75 );
+        color: white;
+        width: fit-content;
+        justify-content: center;
+        position: absolute;
+        top: 211px;
+    }
+    
+    .sub-proj-3-link a {
+        display: block;
+        margin-top: 10px;
+        width: 410px;
+        height: 291px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+    
+    .sub-proj-4 {
+        background-image: url(../images/numbers.jpg);
+        background-position: center;
+        border: 5px solid black;
+        border-radius: 10px;
+        width: 410px;
+        height: 281px;
+        position: relative;
+    }
+    
+    .sub-proj-4 .sub-proj-description {
+        background-color: rgba(2, 2, 2, 0.75 );
+        color: white;
+        width: fit-content;
+        justify-content: center;
+        position: absolute;
+        left: 0px;
+        top: 211px;
+    }
+    
+    .sub-proj-4-link a {
+        margin-top: 10px;
+        width: 410px;
+        height: 291px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
